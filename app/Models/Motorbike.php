@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Motorbike extends Model
 {
-    //
+    protected $fillable = [
+        "brand","model","engine_cc","horsepower","production_year","description","body_type","doors"
+    ]; 
 }

@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('brand');
             $table->string('model');
-            $table->integer('engine_cc');
-            $table->integer('horsepower');
-            $table->year('production_year');
-            $table->text('description');
+            $table->string('engine_cc');
+            $table->string('horsepower');
+            $table->char('production_year',4);
+            $table->string('description');
             $table->string('body_type');
-            $table->integer('doors');
+            $table->string('doors');
             $table->timestamps();
         });
     }
