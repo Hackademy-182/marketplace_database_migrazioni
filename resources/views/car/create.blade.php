@@ -31,8 +31,12 @@
     <input type="text" class="form-control" id="production_year" name="production_year">
   </div>
   <div class="mb-3">
-    <label for="description" class="form-label">Inserisci una Descrizione</label>
+    <label for="description" class="form-label">Inserisci una breve descrizione</label>
     <input type="text" class="form-control" id="description" name="description">
+  </div>
+  <div class="mb-3">
+    <label for="body_type" class="form-label">Inserisci lo stile della carrozzeria</label>
+    <input type="text" class="form-control" id="body_type" name="body_type">
   </div>
   <div class="mb-3">
     <label for="doors" class="form-label">Inserisci il numero di Porte</label>
