@@ -7,6 +7,8 @@
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
+  <x-navbar/>
+  <h1> Marketplace Car & Motorbike </h1>
     
 {{ $slot }}
 
