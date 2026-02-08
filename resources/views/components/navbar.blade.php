@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#" ><img src="{{ asset("img/logo.png")}}" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,7 +13,7 @@
           <a class="nav-link" href="{{ route("car-form") }}"> Inserisci Auto </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"> Inserisci Moto </a>
+          <a class="nav-link" href="{{ route("moto-form") }}"> Inserisci Moto </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
