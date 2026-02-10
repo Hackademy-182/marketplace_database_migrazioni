@@ -10,6 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get("/car/Inserisci Auto", [CarController::class, "carForm"])->name("car-form");
+Route::get("/car/create", [CarController::class, "cardView"])->name("cardCar");
 Route::post("/car/submit", [CarController::class, "carSubmit"])->name("car-submit");
 
 Route::get("/motorbike/Inserisci Moto",[MotorbikeController::class, "motoForm"])->name("moto-form");

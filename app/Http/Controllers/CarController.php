@@ -11,9 +11,14 @@ class CarController extends Controller
         return view("car.create");
     }
 
+    public function cardView(){
+        $cars = Car::All();
+        return view("car.carCard", compact("cars"));
+    }
+
     public function carSubmit( Request $request){
         // dd($request);
-        dd($request->all());
+        // dd($request->all());
         //mass assignament
         $car = Car::create(
         [ 
@@ -28,6 +33,8 @@ class CarController extends Controller
         ]
 
         );
+
+        return redirect()->route("cardCar");
     }
     
     

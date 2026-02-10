@@ -24,8 +24,31 @@ body {
 
 }
 
-.logo{
-    height: 60px;
+
+.zen-dots-regular {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white
+  
 }
 
+.zen-dots-regular:hover{
+    color: red;
+
+}
+
+.css_home{
+  color: white !important;
+  font-weight: bold !important;
+
+}
+
+.css_home:hover{
+color: red !important;
+}
+
+.color_text{
+    color: red;
+}
 
