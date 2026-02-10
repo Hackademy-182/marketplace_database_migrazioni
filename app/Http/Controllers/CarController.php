@@ -22,6 +22,7 @@ class CarController extends Controller
         //mass assignament
         $car = Car::create(
         [ 
+            "title"=>$request->input("title"),
             "brand" => $request->input("brand"),
             "model" => $request->input("model"),
             "engine_cc" => $request->input("engine_cc"),
@@ -29,7 +30,8 @@ class CarController extends Controller
             "production_year" => $request->input("production_year"),
             "description" => $request->input("description"),
             "body_type" => $request->input("body_type"),
-            "doors" => $request->input("doors")
+            "doors" => $request->input("doors"),
+            "img"=>$request->input("img")
         ]
 
         );

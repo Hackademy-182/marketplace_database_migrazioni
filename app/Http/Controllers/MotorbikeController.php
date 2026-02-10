@@ -18,6 +18,7 @@ class MotorbikeController extends Controller
 
         $motorbike = Motorbike::create(
         [
+            "title"=>$request->input("title"),
             "brand" => $request->input("brand"),
             "model" => $request->input("model"),
             "engine_cc" => $request->input("engine_cc"),
@@ -25,7 +26,8 @@ class MotorbikeController extends Controller
             "production_year" => $request->input("production_year"),
             "description" => $request->input("description"),
             "category" => $request->input("category"),
-            "license_type" => $request->input("license_type")
+            "license_type" => $request->input("license_type"),
+            "img"=> $request->input("img")
         ]
         );
     }
