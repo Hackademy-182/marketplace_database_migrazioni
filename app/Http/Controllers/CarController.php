@@ -31,7 +31,7 @@ class CarController extends Controller
             "description" => $request->input("description"),
             "body_type" => $request->input("body_type"),
             "doors" => $request->input("doors"),
-            "img"=>$request->input("img")
+            "img"=> $request->file("img")->store("img", "public")
         ]
 
         );

@@ -27,7 +27,7 @@ class MotorbikeController extends Controller
             "description" => $request->input("description"),
             "category" => $request->input("category"),
             "license_type" => $request->input("license_type"),
-            "img"=> $request->input("img")
+            "img"=> $request->file("img")->store("img, public")
         ]
         );
     }

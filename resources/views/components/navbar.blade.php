@@ -7,11 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active css_home" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route("car-form") }}"> Inserisci Auto </a>
         </li>
+        <a class="nav-link active css_home" aria-current="page" href="{{ route("cardCar") }}">Home</a> 
         <li class="nav-item">
           <a class="nav-link" href="{{ route("moto-form") }}"> Inserisci Moto </a>
         </li>

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-12">
             {{-- form Inserisci Auto --}}
-            <form method="POST" action="{{ route("car-submit")}}">
+            <form method="POST" action="{{ route("car-submit")}}" enctype = "multipart/form-data">
               @csrf
   <div class="mb-3">
     <label for="title" class="form-label">Inserisci titolo dell'annuncio</label>
@@ -42,6 +42,10 @@
     <label for="doors" class="form-label">Inserisci il numero di Porte</label>
     <input type="text" class="form-control" id="doors" name="doors">
   </div>
+  <div class="mb-3">
+  <label for="img" class="form-label">Inserisci una foto</label>
+  <input class="form-control" type="file" id="img" name= "img">
+</div>
   
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

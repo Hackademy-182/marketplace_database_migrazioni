@@ -5,11 +5,12 @@
   <div class="row">
     @foreach ($cars as $car)
     <div class="col-12"><div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title"> {{ $car->title }} </h5>
-    <h5 class="card-title"> {{ $car->brand}} </h5>
-    <h5 class="card-title"> {{ $car->title }} </h5>
+      <div class="card-body">
+        <h5 class="card-title"> {{ $car->title }} </h5>
+        <img src="{{ Storage::url($car->img) }}" class="card-img-top" alt="...">
+    <h5 class="card-title"> {{ $car->brand }} </h5>
+    <h5 class="card-title"> {{ $car->model }} </h5>
+    
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
