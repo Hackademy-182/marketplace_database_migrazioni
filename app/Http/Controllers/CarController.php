@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CarRequest;
 use App\Models\Car;
-use Illuminate\Http\Request;
+// use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
@@ -16,7 +17,7 @@ class CarController extends Controller
         return view("car.carCard", compact("cars"));
     }
 
-    public function carSubmit( Request $request){
+    public function carSubmit( CarRequest $request){
         // dd($request);
         // dd($request->all());
         //mass assignament
