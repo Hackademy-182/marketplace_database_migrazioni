@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-12">
             {{-- form Inserisci Auto --}}
-            <form method="POST" action="{{ route("moto-submit")}}">
+            <form method="POST" action="{{ route("moto-submit")}}" enctype="multipart/form-data">
               @csrf
   <div class="mb-3">
     <label for="title" class="form-label">Inserisci titolo dell'annuncio</label>
@@ -41,6 +41,10 @@
   <div class="mb-3">
     <label for="license_type" class="form-label">Inserisci la tipologia di licenza</label>
     <input type="text" class="form-control" id="license_type" name="license_type">
+    <div class="mb-3">
+  <label for="img" class="form-label">Inserisci una foto</label>
+  <input class="form-control" type="file" id="img" name= "img">
+</div>
   </div>
   
   <button type="submit" class="btn btn-primary">Submit</button>

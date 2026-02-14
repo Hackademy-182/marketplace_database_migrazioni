@@ -11,7 +11,10 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ route("car-form") }}"> Inserisci Auto </a>
         </li>
-        <a class="nav-link active css_home" aria-current="page" href="{{ route("cardCar") }}">Home</a> 
+        <a class="nav-link active css_home" aria-current="page" href="{{ route("cardCar") }}">Auto</a> 
+        <li class="nav-item">
+          </li>
+        <a class="nav-link active css_home" aria-current="page" href="{{ route("motoCard") }}">Moto</a> 
         <li class="nav-item">
           <a class="nav-link" href="{{ route("moto-form") }}"> Inserisci Moto </a>
         </li>

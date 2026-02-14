@@ -14,7 +14,7 @@ class MotorbikeController extends Controller
 
     public function motoSubmit( Request $request){
 
-        dd($request->all());
+        // dd($request->all());
 
         $motorbike = Motorbike::create(
         [
@@ -27,9 +27,10 @@ class MotorbikeController extends Controller
             "description" => $request->input("description"),
             "category" => $request->input("category"),
             "license_type" => $request->input("license_type"),
-            "img"=> $request->file("img")->store("img, public")
+            "img"=> $request->file("img")->store("img", "public")
         ]
         );
+        return redirect()->route("motoCard");
     }
     
 }

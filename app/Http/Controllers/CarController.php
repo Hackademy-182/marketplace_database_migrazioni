@@ -27,11 +27,15 @@ class CarController extends Controller
             "model" => $request->input("model"),
             "engine_cc" => $request->input("engine_cc"),
             "horsepower" => $request->input("horsepower"),
-            "production_year" => $request->input("production_year"),
+            "production_year" => $request->input("production_year",4),
             "description" => $request->input("description"),
             "body_type" => $request->input("body_type"),
             "doors" => $request->input("doors"),
-            "img"=> $request->file("img")->store("img", "public")
+            // "img"=> $request->file("img")->store("img", "public") 
+            // se l'utente non inserisce l'immagine apparirà questa di default  
+            // questo è un if/else 
+            "img"=>$request->has("img") ? $request->file("img")->store("img", "public") : "img/image-not-found_0221202211372462137974b6c1a.png"
+            
         ]
 
         );
