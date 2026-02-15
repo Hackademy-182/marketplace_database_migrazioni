@@ -3,9 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Symfony\Contracts\Service\Attribute\Required;
 
-class CarRequest extends FormRequest
+class MotorbikeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,26 +29,27 @@ class CarRequest extends FormRequest
             "horsepower" => "required|numeric",
             "production_year" => "required|numeric",
             "description" => "required",
-            "body_type" => "required",
-            "doors" => "required|numeric"
-
-
+            "category" => "required",
+            "license_type" => "required"
         ];
     }
 
-    public function messages()
+
+
+     public function messages()
     {
         return [
             "title.required" => "Il titolo dell'annuncio è obbligatorio",
-            "brand.required" => "Il brand dell'annuncio è obbligatorio",
-            "model.required" => "Il modello è obbligatorio",
+            "brand.required" => "Il brand della moto è obbligatorio",
+            "model.required" => "Il modello della moto è obbligatorio",
             "engine_cc.numeric" => "La cilindrata deve essere un numero",
             "horsepower.numeric" => "I cavalli di potenza devono essere numeri",
             "production_year.numeric" => "L'anno di produzione deve essere un numero",
-            "description.required" => "La descrizione della vettura è obbligatoria",
-            "body_type.required" => "Il tipo di carrozzeia della vettura è obbligatorio",
-            "doors.numeric" => "Le porte devono essere un numero",
+            "description.required" => "La descrizione della moto è obbligatoria",
+            "category.required" => "La categoria è obbligatoria",
+            "license_type.required" => "La tipologia di licenza è obbligatoria",
             "img" => "image"
-        ];
-    }
+            ];
+}
+
 }

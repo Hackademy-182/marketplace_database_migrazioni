@@ -3,9 +3,6 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <!-- /resources/views/post/create.blade.php -->
-
-                <h1>Create Post</h1>
 
                 @if ($errors->any())
                     <div class="alert alert-danger">
@@ -17,8 +14,8 @@
                     </div>
                 @endif
 
-                <!-- Create Post Form -->
-                {{-- form Inserisci Auto --}}
+                
+                
                 <form method="POST" action="{{ route('car-submit') }}" enctype = "multipart/form-data">
                     @csrf
                     <div class="mb-3">

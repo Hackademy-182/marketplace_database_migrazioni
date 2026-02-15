@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 use App\Http\Requests\CarRequest;
 use App\Models\Car;
-// use Illuminate\Http\Request;
+// 
 
 class CarController extends Controller
 {
@@ -35,8 +35,8 @@ class CarController extends Controller
             // "img"=> $request->file("img")->store("img", "public") 
             // se l'utente non inserisce l'immagine apparirà questa di default  
             // questo è un if/else 
-            "img"=>$request->has("img") ? $request->file("img")->store("img", "public") : "img/image-not-found_0221202211372462137974b6c1a.png"
             
+            "img" => $request->hasFile("img") ? $request->file("img")->store("img", "public") : "img/image-not-found_0221202211372462137974b6c1a.png",
         ]
 
         );
