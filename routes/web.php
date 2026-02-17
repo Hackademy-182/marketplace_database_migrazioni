@@ -16,3 +16,4 @@ Route::post("/car/submit", [CarController::class, "carSubmit"])->name("car-submi
 Route::get("motorbike/create", [MotorbikeController::class, "cardMoto"])->name("motoCard");
 Route::get("/motorbike/Inserisci Moto", [MotorbikeController::class, "motoForm"])->name("moto-form");
 Route::post("/motorbike/submit", [MotorbikeController::class, "motoSubmit"])->name("moto-submit");
+
